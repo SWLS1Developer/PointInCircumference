@@ -62,11 +62,14 @@ namespace WindowsFormsApp4
     }
 }
 
+
 public static class GenisletmeMethodlari
 {
     public static void DrawArrow(this Graphics g, Pen pen, PointF pt1, PointF pt2)
     {
         g.DrawLine(pen, pt1, pt2);
+        //I was gona make and arrow pointing at the direction that pt2 points but i thougt that i dont need it so this extention methods are just useless.
+        //pt2 yönünde ok çizecektim sonra gereksiz olduğunu düşünüp vaz geçtim yani bu genişletme metodları kullanımsız
     }
 
     public static PointF KartezyenKordinatHesapla(this PointF OrtaNokta, double yaricap, int aci)
